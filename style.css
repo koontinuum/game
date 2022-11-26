@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+.game{
+    width: 600px;
+    height: 350px;
+    border-bottom: 3px solid rgb(133, 133, 133);
+    margin: auto;
+}
+
+
+#dino{
+    background-image: url(./chrome_dino_t-rex_455.jpg);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: relative;
+    top: 300px;
+}
+#cactus{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    position: relative;
+    top: 262px;
+    left: 575px;
+    background-image: url(./img/cactus.png);
+    animation: cactusMove 1.5s infinite linear;
+}
+@keyframes cactusMove {
+    0%{
+        left: 575px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.jump{
+    animation: jump 0.3s linear;
+
+}
+@keyframes jump{
+    0% {
+top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+100%{
+    top:100px;
+}
+}
